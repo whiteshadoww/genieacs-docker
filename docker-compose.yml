@@ -46,16 +46,6 @@ services:
         networks:
             - genieacs_network
 
-### THIS SERVICE IS JUST FOR TESTING PURPOSES ###
-# Dockerfile here: https://hub.docker.com/r/drumsergio/genieacs-sim/dockerfile
-    genieacs-sim:
-        depends_on:
-            - 'genieacs'
-        image: drumsergio/genieacs-sim
-        container_name: "genieacs-sim"
-        networks:
-            - genieacs_network
-
 volumes:
     data_db:
     data_configdb:
