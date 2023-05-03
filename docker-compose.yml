@@ -25,6 +25,8 @@ services:
             - 'mongo'
         image: drumsergio/genieacs:1.2.9
         restart: always
+        network_mode: 'host'
+        privileged: true
         container_name: "genieacs"
         environment:
             - GENIEACS_UI_JWT_SECRET=changeme
