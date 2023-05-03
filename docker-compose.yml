@@ -41,6 +41,7 @@ services:
             - "7567:7567"
             - "3000:3000"
         volumes:
+            - /opt/genieacs/ext:/opt/genieacs/ext
             - opt_volume:/opt
         networks:
             - genieacs_network
